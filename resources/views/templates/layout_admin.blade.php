@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css">
     <script src="https://kit.fontawesome.com/07a69f92d2.js" crossorigin="anonymous"></script>
-    <title>Admin T-Book</title>
+    <title>Admin D-shoes</title>
 </head>
 
 <body>
@@ -17,27 +17,26 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="{{ route('home') }}" class="logo">
-            <img style="height: 100px; width: 100px;" src="{{ asset('images/download.png') }}" alt="">
+            <img style="height: 100px; width: 100px;" src="{{ asset('images/dshoes.png') }}" alt="">
         </a>
         <ul class="side-menu">
-            <li class="active"><a href="{{ route('admin') }}"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+{{--            <li class="active"><a href="{{ route('admin') }}"><i class='bx bxs-dashboard'></i>Dashboard</a></li>--}}
             <li><a href="{{ url('/admin/users') }}"><i class='bx bx-group'></i>Users</a></li>
             <li><a href="{{ url('/admin/categories') }}"><i class='bx bx-category'></i>Categories</a></li>
-            <li><a href="{{ url('/admin/books') }}"><i class='bx bx-book-open'></i>Books</a></li>
+            <li><a href="{{ url('/admin/products') }}"><i class='bx bx-book-open'></i>Products</a></li>
             <li><a href="{{ url('/admin/publishers') }}"><i class='bx bx-buildings'></i>Publishers</a></li>
-            <li><a href="{{ url('/admin/authors') }}"><i class='bx bx-user'></i>Authors</a></li>
             <li><a href="{{ url('/admin/orders') }}"><i class='bx bx-money-withdraw'></i>Orders</a></li>
             <li><a href="{{ url('/admin/reviews') }}"><i class='bx bx-comment'></i>Reviews</a></li>
-            <li><a href="{{ url('/admin/promotions') }}"><i class='bx bxs-discount'></i>Promotions</a></li>
+            <li><a href="{{ url('/admin/promotions') }}"><i class='bx bxs-discount'></i>Discounts</a></li>
             {{-- <li><a href="#"><i class='bx bx-scatter-chart'></i>Statistics</a></li> --}}
         </ul>
         <ul class="side-menu">
-            <li>
-                <a href="{{ route('logout') }}" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
-                    Logout
-                </a>
-            </li>
+{{--            <li>--}}
+{{--                <a href="{{ route('logout') }}" class="logout">--}}
+{{--                    <i class='bx bx-log-out-circle'></i>--}}
+{{--                    Logout--}}
+{{--                </a>--}}
+{{--            </li>--}}
         </ul>
     </div>
     <!-- End of Sidebar -->
@@ -59,9 +58,9 @@
                 <i class='bx bx-bell'></i>
                 <span class="count">12</span>
             </a> -->
-            <a href="#" class="profile">
-                <img src="{{ Storage::url(Auth::user()->image) }}" alt>
-            </a>
+{{--            <a href="#" class="profile">--}}
+{{--                <img src="{{ Storage::url(Auth::user()->image) }}" alt>--}}
+{{--            </a>--}}
         </nav>
 
         <!-- End of Navbar -->
@@ -81,7 +80,7 @@
             function readURL(input, selector) {
                 if (input.files && input.files[0]) {
                     let reader = new FileReader();
-    
+
                     reader.onload = function (e) {
                         $(selector).attr('src', e.target.result);
                     };

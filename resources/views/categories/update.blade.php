@@ -17,25 +17,11 @@
                 <textarea name="description" id="" cols="30" class="form-control" rows="5">{{ $category->description }}</textarea>
                 <span class="@error('description') is-valid  @enderror" style="color: red" >{{ $errors->first('description') }}</span>
             </div>
-            <div class="form-floating col-lg-6 col-sm-12 mx-auto">
-                <select class="form-select" id="floatingSelect" name="cate_id" aria-label="Floating label select example">
-                    @if ($parent)
-                        <option  value="{{ $parent->id }}">{{ $parent->category_name }}</option> 
-                    @else
-                        <option value="">None</option> 
-                    @endif
-                    @foreach ($categories as $cate)
-                        <option value="{{ $cate->id }}">{{ $cate->category_name }}</option>
-                     @endforeach
-                </select>
-                <label for="floatingSelect">Parent Category</label>
-                <span style="color: red" >{{ $m ? $m :''}}</span>
-            </div>
         <div class="gap-2 col-2  mx-auto">
             <button class="btn btn-primary ">Save</button>
             <a href="{{ route('categories') }}" class="btn btn-primary">List Category</a>
         </div>
     </form>
 </div>
-  
+
 @endsection

@@ -6,12 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class List_Image extends Model
+class Review extends Model
 {
     use HasFactory,SoftDeletes;
-    protected $table = 'list_images';
+    protected $table = 'reviews';
     protected $fillable = [
-        'image',
-        'product_id'
+        'product_id',
+        'user_id',
+        'rating',
+        'comment'
     ];
 }

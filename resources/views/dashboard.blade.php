@@ -8,7 +8,7 @@
                     Dashboard
                 </a></li>
             /
-            <li><a href="#" class="active">T-Book</a></li>
+            <li><a href="#" class="active">DShoes</a></li>
         </ul>
     </div>
 
@@ -86,7 +86,7 @@
                         <td>{{ $user->role == 0 ? 'Nữ' : 'Nam' }}</td>
                         <td>{{ (new DateTime($user->created_at))->format('d-m-Y') }}</td>
                     </tr>
-                @endforeach 
+                @endforeach
             </tbody>
         </table>
     </div>
