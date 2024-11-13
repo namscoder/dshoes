@@ -1,0 +1,215 @@
+.product_book{
+    margin-top: 20px;
+}
+
+.product_book .product_book_t1{
+    background-color: #fff;
+    max-width: calc(25% - 20px);
+    margin-right: 20px;
+}
+.product_book .product_book_t1 h4{
+    font-weight: bold;
+    cursor: pointer;
+}
+.product_book .product_book_t2{
+    background-color: #fff;
+    padding: 20px;
+
+}
+/* sản phẩm */
+.product_book_item{
+    cursor: pointer;
+    transition: .4s;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.product_book_item a{
+    color: #000;
+}
+.product_book_item:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.20);
+    transform: translate(0px,-8px);
+}
+
+.product_book_item img{
+    width: 98%;
+    height: 300px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product_book_item .title{
+    height: 75px;
+}
+
+.product_book_item h5{
+    line-height: 25px;
+}
+.product_book_item ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.product_book_item ul li i{
+    color: gold !important;
+}
+
+
+.product_book_item .price{
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.product_book_item .price h6{
+    font-size: 25px !important;
+    margin: 0 !important;
+    color: red !important;
+    font-weight: bold;
+}
+
+.product_book_item .star{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.product_book_item .btn_buy{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff !important;
+    background: linear-gradient(to right,  #ff416c, #ff4b2b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.btn_all{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product_book_item .btn_buy i{
+    color: #fff !important;
+}
+
+/* danh mục */
+.product_book_t1{
+    height: 100%;
+}
+.product_book_t1 .menu{
+    padding-left: 0;
+}
+.product_book_t1 .menu li{
+    list-style: none;
+    padding-left: 10px;
+}
+.product_book_t1 .menu li i{
+    margin-left: 10px;
+    font-size:11px;
+    color: gray;
+}
+.product_book_t1 .menu li a{
+    color: gray;
+    font-size: 18px;
+}
+.product_book_t1 .menu li a:hover{
+    color: orange;
+}
+.product_book_t1 .menu .submenu_mobile{
+    padding: 0;
+    padding-left: 1rem;
+}
+.product_book_t1 .menu .submenu_mobile1{
+    display: none;
+    padding-left: 1rem;
+}
+/* .product_book_t1 .menu li:hover > .submenu_mobile{
+    display: block;
+} */
+.product_book_t1 .menu .submenu_mobile li:hover > .submenu_mobile1{
+    display: block;
+}
+
+
+/* breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+  
+.breadcrumb span {
+    margin-left: 5px;
+    color: gray;
+}
+  
+.breadcrumb a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+.product_book_t1_price label{
+    cursor: pointer;
+}
+.product_book_t1_price label a{
+    color:black;
+}
+.product_book_t1_price label:hover{
+    color: #ff4b2b;
+}
+/* star filter */
+
+.star_filter{
+    display: flex;
+    margin-left: 5px;
+    padding-left: 0;
+    list-style: none;
+    cursor: pointer;
+}
+.active_star{
+    padding: 0 10px;
+    background-color: gainsboro;
+    margin-left: -10px;
+    border-radius:10px;
+}
+.active_star li.gainsboro i{
+    color: #fff !important;
+}
+.star_filter li.yellow i{
+    color: #ffd700;
+}
+.star_filter li.gainsboro i{
+    color: gainsboro;
+}
+/* break point */
+@media only screen and (max-width: 992px) {
+    .product_book .product_book_t1{
+        background-color: #fff;
+        max-width: calc(33% - 20px);
+        margin-right: 20px;
+    }
+    .product_book_item .title{
+        height: 100px;
+    }
+    .product_book_item .title h5{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product_book .product_book_t1{
+        max-width: 100% !important;
+    }
+    .product_book .product_book_t2{
+        margin-top: 10px;
+    }
+}

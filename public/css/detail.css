@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-wrapper{
+    margin-top: 50px;
+}
+.card{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.img-display{
+    overflow: hidden;
+}
+
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+
+.product-content{
+    max-width: 100%;
+    padding: 2rem 1rem;
+}
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+
+.product-link:hover{
+    opacity: 0.9;
+}
+.product-rating{
+    color: #ffc107;
+}
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.product-price span{
+    font-weight: 400;
+}
+.last-price span{
+    color: #f64749;
+    text-decoration: line-through;
+}
+.new-price span{
+    color: #256eff;
+}
+
+.product_info span{
+    font-size:18px;
+}
+
+.purchase-info{
+    margin: 1.5rem 0;
+    align-items: center;
+    margin-top: 40px !important;
+    text-align: center;
+}
+
+.purchase-info .total_sell{
+    font-size:20px;
+    opacity: 0.7;
+}
+.purchase-info .quantity_status{
+    font-size:20px;
+        
+}
+
+.more_info span{
+    margin-left: 30px;
+    font-size: 20px;
+    opacity: 0.8;
+   
+}
+.more_info span i{
+ color: darkgreen ;
+}
+
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.purchase-info input{
+    width: 60px;
+}
+.purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+}
+.purchase-info .btn:first-of-type{
+    background: #256eff;
+}
+.purchase-info .btn:last-of-type{
+    background: #f64749;
+}
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+/* mô tả sản phẩm */
+.detail_description{
+    border: solid 1px gainsboro;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.detail_description table{
+    width: 70%;
+}
+.detail_description table td{
+    border: none;
+}
+@media only screen and (max-width: 992px){
+    .detail_description table {
+        width: 100%;
+    }
+}
+
+/* Đánh giá sản phẩm */
+.feedback{
+    border: solid 1px gainsboro;
+    margin-top: 20px;
+    padding: 20px;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1320px !important;
+}
+.reviews{
+    padding: 0 50px;
+}
+.reviews img{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+}
+
+.reviews .review-rating{
+    margin-left: 50px;
+    font-size: 13px;
+}
+.reviews .review-comment{
+    margin-left: 50px;
+}
+
+.review-comment .modal{
+    margin-top: 300px !important;
+}
+
+.modal-content .close{
+    color: red !important;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+.modal-body .form-group i{
+    color:gainsboro;
+    cursor: pointer;
+}
+.modal-body .form-group label .active{
+    color: #ffc107;
+}

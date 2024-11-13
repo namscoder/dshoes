@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.customer_information{
+    border: solid 1px gainsboro;
+    padding: 30px;
+    margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product{
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: solid 1px gainsboro;
+
+}
+.product table{
+    text-align: center;
+    font-size: 18px;
+}
+
+.voucher{
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: solid 1px gainsboro;
+}
+
+.payment_method{
+    margin-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: solid 1px gainsboro;
+    margin-bottom: 100px;
+}
+
+.header_payment_method{
+    padding: 0 30px;
+    padding-top: 30px;
+
+}
+.payment_method_item{
+    margin-left: 20px;
+}
+.payment_method_item label{
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color:#fff;
+    color:#000;
+    border: solid 1px gainsboro;
+    cursor: pointer;
+}
+.payment_method_item input[type="radio"]:checked + label{
+    color:red !important;
+    border: solid 1px red !important;
+    background-color:#fff !important;
+}
+.payment_method_item label:hover{
+    color:red;
+    border: solid 1px red;
+    background-color:#fff;
+}
+.total_payment{
+    background-color: #ECE9E6;
+    padding-top: 50px;
+}
+.total_payment .left{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:380px ;
+    height: 40px;
+    margin-left: calc(100% - 380px);
+    padding: 0 20px;
+}
+
+.total_payment .left h3{
+    font-size:20px;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.total_payment .left span{
+    font-size: 20px;
+    color: gray;
+    text-align: right;
+}
+
+.btn-payment{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.btn-payment button{
+    width: 100px;
+}
+@media only screen and (max-width: 768px) {
+    .btn-payment button{
+        margin-left: calc(100% - 100px);
+    }
+}
+
+
